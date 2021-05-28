@@ -3,7 +3,7 @@
 C is one of the languages which we use in the process of communivating with the computers.
 Communicating with a computer involves speaking the language the
 computer understands, which immediately rules out English as the
-language of communication with computer.
+language of communication with computer.  It is a compiled language.
 #### Origin of C:
 It was developed at Bell Labs, by Dennis Ritchie, Ken Thompson and others. It was a by-product of the UNIX operating system. Like other operating systems of that time, UNIX was written in assembly level language. </br>
 programs written in assembly level language are hard to debug and enhance, and UNIX wwas no exception.
