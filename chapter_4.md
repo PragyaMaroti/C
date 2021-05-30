@@ -49,7 +49,7 @@ nested if-elses. Though the program works fine, it can be a bit tedious work to:
 Let us now introduce ourselves to the **__logical operators :__**
 C allows usage of three logical operators, namely, &&, || and !. These
 are to be read as ‘AND’, ‘OR’ and ‘NOT’, respectively. Their working is similar to the logical and and logical or that we come across in maathematics.
-These operators return true or false.  
+These operators return true or false.  These are also Binary operators, implying they require two arguments.
  Note that: two of them are composed of double symbols: || and &&.
 Don’t use the single symbol | and &. These single symbols also have a
 meaning. They are bitwise operators.  
