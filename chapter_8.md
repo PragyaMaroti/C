@@ -191,15 +191,16 @@ collects them, it prints them in the order in which we have asked it to
 get them printed (and not the order in which they were passed).  
 
 ### One Dicey Issue
-Now consider the following program:
-#include <stdio.h>  
-int main( )  
-{  
-int i = 10, j = 20 ;  
-printf ( "%d %d %d\n", i, j ) ;  
-printf ( "%d\n", i, j ) ;  
-return 0 ;  
-}  
+Now consider the following program:  
+
+     #include <stdio.h>  
+     int main( )  
+     {  
+     int i = 10, j = 20 ;  
+     printf ( "%d %d %d\n", i, j ) ;  
+     printf ( "%d\n", i, j ) ;  
+     return 0 ;  
+     }  
 This program gets successfully compiled, even though there is a
 mismatch in the format specifiers and the variables in the list used in
 printf( ). This is because, printf( ) accepts variable number of arguments
