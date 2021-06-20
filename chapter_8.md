@@ -26,13 +26,13 @@ In a program, while making a function and then using it, we come accross the fol
 We declare the return type, name of the function, and it's type of arguments.  
 Declaration is done globally, before the function where we are gonna call it.  
 
-##### syntax:
-##### return_type Name_of function(arguments types separated by ,);
+*__syntax:__*
+ return_type Name_of function(arguments types separated by ,);   
 this is a necessary thing to do for using our own functions. Here , we may or may not name the argument variables.
 
 #### Function Definition:
- In a Function definition, we have the full function with its body containing all the operations to be done on arguments or any statement to be executed when the function runs.  
- ##### syntax:
+ In a Function definition, we have the full function with its body containing all the operations to be done on arguments or any statement to be executed when the function runs.    
+ *__syntax:__*  
  return_type Name_of function(arguments types separated by ,)  
  {
  // function body with all its required statements and return statement when the retuen type isn't void  
@@ -40,10 +40,9 @@ this is a necessary thing to do for using our own functions. Here , we may or ma
  Note: function can be definied right after its declaration also. 
  #### Function call:
 When we call a function, the control passes to the function.
-##### syntax
+*__syntax:__* 
 function name(arguments);
-When function runs
-out of statements to execute, the control returns to where it was called.  
+When function runs out of statements to execute, the control returns to where it was called.  
 Note: function calls can be done within outside the function or within itself too. 🤓 Function calling itself is a separate interesting topic(called recursion).
 ### Libraary functions: 
 As the name suggests, library functions are nothing but commonly
@@ -135,43 +134,43 @@ If the value of a formal argument is changed in the called function,
 the corresponding change does not take place in the calling
 function. for example:  
 
-#include <stdio.h>  
-void fun ( int ) ;  
-int main( )  
-{  
-int a = 30 ;  
-fun ( a ) ;  
-printf ( "%d\n", a ) ;  
-return 0 ;  
-}  
-void fun ( int b )  
-{  
-b = 60 ;  
-printf ( "%d\n", b ) ;  
-}  
-Output:  
-60  
-30  
-through htis we can understand that we have only passed the information of what value was stored in a. We do not have access to the actual memory location of a. B only has the same value as a.  
-Adding further to this , we have 
-#### The scope rule of a function:
+      #include <stdio.h>  
+      void fun ( int ) ;  
+      int main( )  
+      {  
+      int a = 30 ;  
+      fun ( a ) ;  
+      printf ( "%d\n", a ) ;  
+      return 0 ;  
+      }  
+      void fun ( int b )  
+      {  
+      b = 60 ;  
+      printf ( "%d\n", b ) ;  
+      }  
+      Output:  
+      60  
+      30  
+      through htis we can understand that we have only passed the information of what value was stored in a. We do not have access to the actual memory location of a. B only has the same value as a.  
+      Adding further to this , we have 
+      #### The scope rule of a function:
 
-scope of a variable is local to
-the function in which it is defined. For example:  
-#include <stdio.h>  
-void display ( int ) ;  
-int main( )  
-{   
-int i = 20 ;  
-display ( i ) ;  
-return 0 ;  
-}  
-void display ( int j )  
-{  
-int k = 35 ;    
-printf ( "%d\n", j ) ;  
-printf ( "%d\n", k ) ;  
-}  
+      scope of a variable is local to
+      the function in which it is defined. For example:  
+      #include <stdio.h>  
+      void display ( int ) ;  
+      int main( )  
+      {   
+      int i = 20 ;  
+      display ( i ) ;  
+      return 0 ;  
+      }  
+      void display ( int j )  
+      {  
+      int k = 35 ;    
+      printf ( "%d\n", j ) ;  
+      printf ( "%d\n", k ) ;  
+      }  
 is it necessary to pass the value of the variable i to the
 function display( )? Will it not become automatically available to the
 function display( )? No. Because, by default, the scope of a variable is
@@ -191,7 +190,7 @@ passed. Thus in right to left order, 1, 3, 3 get passed. Once printf( )
 collects them, it prints them in the order in which we have asked it to
 get them printed (and not the order in which they were passed).  
 
-#### One Dicey Issue
+### One Dicey Issue
 Now consider the following program:
 #include <stdio.h>  
 int main( )  
